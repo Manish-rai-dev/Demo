@@ -1,11 +1,11 @@
 .NavbarMain{
     background-color: rgb(28,24,87);
-    height: 10vh;
+    height: 15vh;
 
 }
 .navbar {
 
-    padding-top: 25px;
+    padding-top: 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -34,4 +34,16 @@
   .nav-link:hover {
     color: #f5c518;
   }
-  
+  .btnContainer{
+    background-color: #ee4036;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+.logoHead{
+  position: relative;
+  top: -30px;
+  left: -100px;
+}
