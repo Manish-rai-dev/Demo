@@ -88,7 +88,7 @@ const Middle = () => {
 
     </div>
 
-    <div className="relaxImage">
+    <div className="c">
         <img src={Relax} className="imageMargins"  width={1200}alt="noimage" />
         <div className="containerAboveImage">
             <div className="center">
