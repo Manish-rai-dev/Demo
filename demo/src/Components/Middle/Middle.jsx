@@ -86,17 +86,35 @@ const Middle = () => {
 
     <div className="relaxImage">
         <img src={Relax} className="imageMargins"  width={1200}alt="noimage" />
-        <div className="containerAboveImage center">
+        <div className="containerAboveImage">
+            <div className="center">
             <div className="textContainer">
-            Do not play in the hands of confusion and lack of transparency 
+            Do not play in the hands of confusion
+            <div className="marginL5"> and lack of transparency </div>
             </div>
+            
+            </div>
+            <div className="center">
             <div className="textContainerlight">
          We gurantee clarity and transparency !
             </div>
+            </div>
+            <div className="center">
             <div className="btnContainer">
             Get a Quote
             </div>
+            </div>
         </div>
+    </div>
+    <div className="formContainer">
+        <div className="mainForm">
+            <div className="FormHeader">
+            <p className="oneZone">
+        Let Talk
+    </p>
+            </div>
+        </div>
+
     </div>
     </>
   )
