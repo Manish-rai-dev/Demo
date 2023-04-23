@@ -1,59 +1,134 @@
-import { TextField, InputAdornment, MenuItem, Select } from '@mui/material';
-import { useState } from 'react';
-import { countries } from './countries'; 
+// import  { useState } from 'react';
+// import { makeStyles } from '@material-ui/core/styles';
+// import TextField from '@material-ui/core/TextField';
+// import MenuItem from '@material-ui/core/MenuItem';
+// import Button from '@material-ui/core/Button';
 
-export default function Form() {
-  const [country, setCountry] = useState('US');
-  const [enquiry, setEnquiry] = useState('');
+// const useStyles = makeStyles((theme) => ({
+//   form: {
+//     display: 'flex',
+//     flexDirection: 'column',
+//     alignItems: 'center',
+//     '& .MuiTextField-root': {
+//       margin: theme.spacing(1),
+//       width: '25ch',
+//     },
+//   },
+// }));
 
-  const handleCountryChange = (event) => {
-    setCountry(event.target.value);
-  };
+// const countries = [
+//   {
+//     value: 'USA',
+//     label: '+1',
+//   },
+//   {
+//     value: 'UK',
+//     label: '+44',
+//   },
+//   {
+//     value: 'Germany',
+//     label: '+49',
+//   },
+// ];
 
-  const handleEnquiryChange = (event) => {
-    setEnquiry(event.target.value);
-  };
+// const inquiries = [
+//   {
+//     value: 'General',
+//     label: 'General Enquiry',
+//   },
+//   {
+//     value: 'Support',
+//     label: 'Technical Support',
+//   },
+//   {
+//     value: 'Sales',
+//     label: 'Sales Enquiry',
+//   },
+//   {
+//     value: 'Other',
+//     label: 'Other',
+//   },
+// ];
 
-  return (
-    <form>
-      <TextField label="Full Name" fullWidth />
-      <TextField label="Email" fullWidth type="email" />
-      <TextField
-        label="Your phone number with country code"
-        fullWidth
-        InputProps={{
-          startAdornment: (
-            <InputAdornment position="start">
-              <Select
-                value={country}
-                onChange={handleCountryChange}
-                label="Country"
-                disableUnderline
-              >
-                {countries.map(({ code, name }) => (
-                  <MenuItem key={code} value={code}>
-                    <img src={`https://www.countryflags.io/${code.toLowerCase()}/flat/24.png`} alt={name} />
-                    {`+${code}`}
-                  </MenuItem>
-                ))}
-              </Select>
-            </InputAdornment>
-          ),
-        }}
-      />
-      <TextField
-        label="Enquiry for"
-        fullWidth
-        select
-        value={enquiry}
-        onChange={handleEnquiryChange}
-        InputLabelProps={{ shrink: true }}
-      >
-        <MenuItem value="sales">Sales</MenuItem>
-        <MenuItem value="support">Support</MenuItem>
-        <MenuItem value="general">General</MenuItem>
-      </TextField>
-      <TextField label="Your inquiry" fullWidth multiline rows={4} />
-    </form>
-  );
-}
+// export default function InputForm() {
+//   const classes = useStyles();
+//   const [fullName, setFullName] = useState('');
+//   const [email, setEmail] = useState('');
+//   const [countryCode, setCountryCode] = useState('+1');
+//   const [phoneNumber, setPhoneNumber] = useState('');
+//   const [inquiry, setInquiry] = useState('General');
+//   const [inquiryDetails, setInquiryDetails] = useState('');
+
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+//     console.log({
+//       fullName,
+//       email,
+//       countryCode,
+//       phoneNumber,
+//       inquiry,
+//       inquiryDetails,
+//     });
+//   };
+
+//   return (
+//     <form className={classes.form} onSubmit={handleSubmit}>
+//       <TextField
+//         label="Full Name"
+//         value={fullName}
+//         onChange={(event) => setFullName(event.target.value)}
+//         required
+//       />
+//       <TextField
+//         label="Email"
+//         type="email"
+//         value={email}
+//         onChange={(event) => setEmail(event.target.value)}
+//         required
+//       />
+//       <TextField
+//         select
+//         label="Country Code"
+//         value={countryCode}
+//         onChange={(event) => setCountryCode(event.target.value)}
+//         required
+//       >
+//         {countries.map((option) => (
+//           <MenuItem key={option.value} value={option.label}>
+//             {option.label}
+//           </MenuItem>
+//         ))}
+//       </TextField>
+//       <TextField
+//         label="Phone Number"
+//         value={phoneNumber}
+//         onChange={(event) => setPhoneNumber(event.target.value)}
+//         required
+//       />
+//       <TextField
+//         select
+//         label="Enquiry"
+//         value={inquiry}
+//         onChange={(event) => setInquiry(event.target.value)}
+//         required
+//       >
+//         {inquiries.map((option) => (
+//           <MenuItem key={option.value} value={option.label}>
+//             {option.label}
+//           </MenuItem>
+//         ))}
+//       </TextField>
+//       <TextField
+//         label="Inquiry Details"
+//         multiline
+//         rows={4}
+//         value={inquiryDetails}
+//         onChange={(event) => setInquiryDetails(event.target.value)}
+//         required
+//       />
+//       <Button type="submit" variant="contained" color="primary">
+//         Submit
+//       </Button>
+//     </form>
+//   );
+// }

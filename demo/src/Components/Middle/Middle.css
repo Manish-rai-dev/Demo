@@ -10,7 +10,8 @@
     text-align: center;
     color: #262252;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    margin-bottom: 4%;
 }
 .containerBoxes{
     display: flex;
@@ -33,15 +34,40 @@
 .hoboxes{
 background-color: #e8e6ff ;
 border: 1px solid  #262261;
+color: #262261;
+font-weight: 600;
+font-size: 2rem;
+width: 30vw;
+margin-bottom: 20px;
+padding: 20px;
+margin-top: 2%;
+margin-left: 5%;
+text-align: center;
+}
+.shortText{
+    color: #262261;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+
 }
 .cardIconized
 {
     background-color: #262261 ;
     color: #fff;
     width: 40vw; 
-    margin-left: 5%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 10%;
     margin-bottom: 2%;
-    padding: 10px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 3%;
+}
+.cardIconized2{
+    margin-left: -3%;
+    margin-bottom: 8%;
 }
 .center
 {
@@ -144,3 +170,12 @@ input {
     outline: none;
   }
   
+  .textBelowfor{
+    color: #262261;
+    font-weight: 400;
+    font-size: 1.4rem;
+     text-align: center;
+     margin-left: 5%;
+     margin-right: 5%;
+     margin-bottom: 3%;
+  }

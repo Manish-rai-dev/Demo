@@ -1,9 +1,11 @@
 import "./Middle.css";
 import Thinking from "./thinking.jpg";
+
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
-import Form from "../Form/Form";
+// import Form from "../Form/Form";
+// import { TextField } from '@mui/material';
 import Relax from "./relax.jpg";
 const Middle = () => {
   return (
@@ -40,13 +42,14 @@ const Middle = () => {
     <p className="textBelow">
         we provide the simplest solution to your business challenge.
     </p>
-    <div className="lowerContainer grid">
+    <div className="lowerContainer grid grid-cols-2 gap-2">
         <div className="cols-5">
             <img src={Thinking} alt="" />
         </div>
         <div className="cols-5">
-<div className="hoboxes row">Step 1 
-<div className="row shortText">Get a quick detailed quote</div>
+<div className="hoboxes ">Step 1 
+<div className="row shortText">
+    Get a quick detailed quote</div>
 </div>
 <div className="hoboxes"> Step 2
 <div className="row shortText">Get a quick detailed quote</div>
@@ -61,10 +64,10 @@ const Middle = () => {
 
     <div className="Business">
     <p className="oneZone">
-        You are in Business Now
+        You&apos;re in Business Now
     </p>
     
-    <p className="textBelow">
+    <p className="textBelowfor">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos similique laudantium quisquam distinctio dolor mollitia, repellendus hic in ratione accusantium ex dolorum eligendi accusamus esse voluptas asperiores, soluta optio ipsam.
     </p>
 
@@ -76,11 +79,11 @@ const Middle = () => {
     <span className="  cardIconized">My UAE vissa is issued</span>
     </div>
     <div className="grid grid-cols-2">
-    <span className="cardIconized">My company is incorporated</span>
-    <span className="cardIconized">My UAE vissa is issued</span>
+    <span className="cardIconized">My corporate bank account is opened</span>
+    <span className="cardIconized">My Business is growing </span>
     </div>
     <div  className="center">
-    <div className="cardIconized textCenter">My UAE vissa is issued</div>
+    <div className="cardIconized cardIconized2 textCenter">My ongoing corporate requirements are met</div>
     </div>
 
     </div>
@@ -124,7 +127,9 @@ const Middle = () => {
  </div>
  </div>
       <div className="form">
-        <Form></Form>
+       
+{/* <Form></Form> */}
+
       </div>
       
 
@@ -134,4 +139,4 @@ const Middle = () => {
   )
 }
 
-export default Middle
+export default Middle;
