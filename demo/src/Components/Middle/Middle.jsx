@@ -3,6 +3,7 @@ import Thinking from "./thinking.jpg";
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
+import Form from "../Form/Form";
 import Relax from "./relax.jpg";
 const Middle = () => {
   return (
@@ -107,14 +108,27 @@ const Middle = () => {
         </div>
     </div>
     <div className="formContainer">
-        <div className="mainForm">
-            <div className="FormHeader">
+    <div className="FormHeader">
             <p className="oneZone">
-        Let Talk
+        Let&apos;s Talk
     </p>
-            </div>
-        </div>
+    </div>
+        <div className="mainForm">
+         
+<div className="formHeadtoBtm">
+ <div className="headerFor">
+    Get a FREE Quote Now
+ </div>
+ <div className="headerForLight">
+    We will beat any equivalent offer you have!
+ </div>
+ </div>
+      <div className="form">
+        <Form></Form>
+      </div>
+      
 
+        </div>
     </div>
     </>
   )
