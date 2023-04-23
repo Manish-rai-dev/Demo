@@ -1,11 +1,15 @@
 import "./Middle.css";
 import Thinking from "./thinking.jpg";
+// import Form from "../Form/Form";
 
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
 // import Form from "../Form/Form";
 // import { TextField } from '@mui/material';
+import TextField from '@mui/material/TextField';
+// import Button from '@mui/material/Button';
+// import { FormControl, FormLabel } from '@mui/material'
 import Relax from "./relax.jpg";
 const Middle = () => {
   return (
@@ -128,17 +132,37 @@ const Middle = () => {
  </div>
       <div className="form">
      
-      
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur soluta molestias quo praesentium esse ex molestiae reprehenderit commodi iste maxime? Optio animi expedita fugiat maxime harum quis repellendus ab voluptatum.
+      <form>
+  <div>
+   
+    <TextField id="standard-basic"className="inputFormclass" label="Full Name" variant="standard" />
+  </div>
+  <div>
     
-    <div className="center">
+    <TextField id="standard-basic"className="inputFormclass" label="E-mail" variant="standard" />
+  </div>
+  <div>
+    
+    <TextField id="standard-basic"className="inputFormclass" label="your Phone" variant="standard" />
+  </div>
+  <div>
+    
+    <TextField id="standard-basic" className="inputFormclass"label="Enquiry for" variant="standard" />
+  </div>
+  <div>
+    
+    <TextField id="standard-basic"className="inputFormclass"  label="Your Enquiry" variant="standard" />
+  </div>
+</form>
+{/* <Form></Form> */}
+
+      </div>
+      
+      <div className="center">
 <div className="btnContainer center">
             Get a FREE Quote
             </div>
             </div>
-      </div>
-      
-
         </div>
     </div>
     </>

@@ -163,6 +163,7 @@ margin-left: 15%;
     width: 40vw;
     margin:auto ;
     margin-bottom: 7%;
+    padding-bottom: 40px;
 }
 .inputNoborder{
     border: none;
@@ -183,4 +184,13 @@ input {
      margin-left: 5%;
      margin-right: 5%;
      margin-bottom: 3%;
+  }
+  .inputFormclass{
+    width: 30vw;
+    margin-left: 5%;
+    margin-bottom: 40px;
+  }
+  .form{
+    margin-left: 12%;
+    margin-bottom: 5%;
   }
