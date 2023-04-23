@@ -127,9 +127,15 @@ const Middle = () => {
  </div>
  </div>
       <div className="form">
-       
-{/* <Form></Form> */}
-
+     
+      
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur soluta molestias quo praesentium esse ex molestiae reprehenderit commodi iste maxime? Optio animi expedita fugiat maxime harum quis repellendus ab voluptatum.
+    
+    <div className="center">
+<div className="btnContainer center">
+            Get a FREE Quote
+            </div>
+            </div>
       </div>
       
 
