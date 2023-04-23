@@ -2,6 +2,7 @@ import "./Home.css";
 import Logo from "../Footer/image/logo.png"
 import Middle from "../Middle/Middle";
 import Footer from "../Footer/Footer";
+import Main from "../Main/Main";
 const Home = () => {
   return (
     <>
@@ -46,6 +47,7 @@ const Home = () => {
     </nav>
     </div>
     <div className="MiddleContainer">
+        <Main/>
         <Middle></Middle>
     </div>
 
